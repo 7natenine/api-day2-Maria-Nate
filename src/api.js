@@ -1,12 +1,11 @@
 const BASE_URL = 'https://thinkful-list-api.herokuapp.com/maria-nate';
 
-const getItems = function () {
-  api.getItems {
-    .then(res => res.json())
-    .then(res => console.log(res));
-  });
-  return Promise.resolve('A successful response!');
+const getItems = function (BASE_URL) {
+  return fetch(`${BASE_URL}/items`); 
 };
+
+
+
 
 export default {
   getItems
