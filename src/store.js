@@ -35,10 +35,8 @@ const toggleCheckedFilter = function () {
 };
 
 const findAndUpdate = function(id, newData){
-  const currentItem = this.findById(id);
-  console.log(currentItem,'here ');
+  let currentItem = this.findById(id);
   Object.assign(currentItem, newData);
-  console.log(currentItem,'later ');
 };
 
 export default {
